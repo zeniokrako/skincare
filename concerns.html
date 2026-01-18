@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Concerns - Skincare Database</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script>
+        // Apply saved theme immediately to prevent flash
+        (function() {
+            const saved = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', saved);
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="./index.html">Skincare DB</a></div>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="">Products</a></li>
+                <li><a href="./ingredients.html" class="">Ingredients</a></li>
+                <li><a href="./concerns.html" class="active">Skin Concerns</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+                <span class="icon-sun">&#9728;</span>
+                <span class="icon-moon">&#9790;</span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        
+        <h1>Skin Concerns Guide</h1>
+        <p>Understanding how ingredients interact with 18 skin concerns</p>
+
+        <div class="concerns-grid">
+            
+            <div class="concern-card" id="acne-prone">
+                <h3>Acne Prone Skin</h3>
+                <p>Skin susceptible to developing acne, including blackheads, whiteheads, and inflammatory lesions. Requires careful ingredient selection to avoid pore-clogging substances.</p>
+            </div>
+        
+            <div class="concern-card" id="aging">
+                <h3>Aging / Fine Lines</h3>
+                <p>Concern about wrinkles, fine lines, loss of elasticity, and other signs of skin aging. Benefits from antioxidants, retinoids, and collagen-supporting ingredients.</p>
+            </div>
+        
+            <div class="concern-card" id="comedogenic">
+                <h3>Comedogenic</h3>
+                <p>Concern about pore-clogging ingredients. Score indicates comedogenicity: positive values mean more likely to clog pores, negative values mean non-comedogenic or pore-clearing.</p>
+            </div>
+        
+            <div class="concern-card" id="contact-dermatitis">
+                <h3>Contact Dermatitis</h3>
+                <p>Skin inflammation caused by direct contact with allergens or irritants. Requires identifying and avoiding trigger ingredients.</p>
+            </div>
+        
+            <div class="concern-card" id="dehydrated">
+                <h3>Dehydrated Skin</h3>
+                <p>Skin lacking water (distinct from dry skin which lacks oil). Can affect any skin type. Benefits from humectants and hydrating ingredients.</p>
+            </div>
+        
+            <div class="concern-card" id="eczema">
+                <h3>Eczema / Atopic Dermatitis</h3>
+                <p>A condition causing dry, itchy, and inflamed skin. The skin barrier is compromised, requiring extra moisturization and gentle ingredients.</p>
+            </div>
+        
+            <div class="concern-card" id="fragrance-sensitivity">
+                <h3>Fragrance Sensitivity</h3>
+                <p>Concern about reactions to fragrance compounds and essential oils. Positive score indicates fragrance/sensitizing potential.</p>
+            </div>
+        
+            <div class="concern-card" id="fungal-prone">
+                <h3>Fungal Prone Skin</h3>
+                <p>Skin susceptible to fungal overgrowth (Malassezia). Requires avoiding ingredients that feed fungi, such as certain fatty acids and esters.</p>
+            </div>
+        
+            <div class="concern-card" id="hyperpigmentation">
+                <h3>Hyperpigmentation</h3>
+                <p>Dark spots, melasma, post-inflammatory hyperpigmentation, or uneven skin tone. Benefits from brightening ingredients and tyrosinase inhibitors.</p>
+            </div>
+        
+            <div class="concern-card" id="irritation">
+                <h3>Irritation Potential</h3>
+                <p>General tendency to cause stinging, burning, or irritation. Positive score means more irritating, negative means soothing/calming.</p>
+            </div>
+        
+            <div class="concern-card" id="oily-skin">
+                <h3>Oily Skin</h3>
+                <p>Skin that produces excess sebum, often leading to shine and enlarged pores. Benefits from oil-controlling and non-comedogenic products.</p>
+            </div>
+        
+            <div class="concern-card" id="photosensitivity">
+                <h3>Photosensitivity</h3>
+                <p>Concern about ingredients that increase sun sensitivity. Positive score means the ingredient increases photosensitivity (problematic), negative means it offers photoprotection.</p>
+            </div>
+        
+            <div class="concern-card" id="pregnancy-safety">
+                <h3>Pregnancy Safety</h3>
+                <p>Concern about ingredient safety during pregnancy and breastfeeding. Negative score means unsafe/avoid, positive means safe/beneficial.</p>
+            </div>
+        
+            <div class="concern-card" id="psoriasis">
+                <h3>Psoriasis</h3>
+                <p>An autoimmune condition causing rapid skin cell buildup, resulting in scaling and inflammation. Benefits from ingredients that support cell turnover and reduce inflammation.</p>
+            </div>
+        
+            <div class="concern-card" id="rosacea">
+                <h3>Rosacea</h3>
+                <p>A chronic inflammatory skin condition causing facial redness, visible blood vessels, and sometimes small bumps. Requires gentle, non-irritating products.</p>
+            </div>
+        
+            <div class="concern-card" id="seb-derm">
+                <h3>Seborrhoeic Dermatitis</h3>
+                <p>A common skin condition causing scaly patches, red skin, and stubborn dandruff. Often triggered by Malassezia yeast, so avoiding certain oils and fatty acids is important.</p>
+            </div>
+        
+            <div class="concern-card" id="sensitive-skin">
+                <h3>Sensitive Skin</h3>
+                <p>Skin that reacts easily to products or environmental factors, often with redness, stinging, or irritation. Requires minimal, gentle formulations.</p>
+            </div>
+        
+            <div class="concern-card" id="xerosis">
+                <h3>Very Dry Skin (Xerosis)</h3>
+                <p>Extremely dry skin lacking moisture and natural oils. Requires intensive hydration and occlusive ingredients to restore the skin barrier.</p>
+            </div>
+        
+        </div>
+    
+    </main>
+    <footer>
+        <p>Skincare Database - Helping you find products for your skin concerns</p>
+    </footer>
+    <script src="./js/filters.js"></script>
+</body>
+</html>

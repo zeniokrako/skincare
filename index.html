@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Skincare Database</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script>
+        // Apply saved theme immediately to prevent flash
+        (function() {
+            const saved = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', saved);
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="./index.html">Skincare DB</a></div>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="active">Products</a></li>
+                <li><a href="./ingredients.html" class="">Ingredients</a></li>
+                <li><a href="./concerns.html" class="">Skin Concerns</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+                <span class="icon-sun">&#9728;</span>
+                <span class="icon-moon">&#9790;</span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        
+        <section class="filters-section">
+            <div class="filters-header">
+                <span class="filters-label">Skin Concerns:</span>
+                <div class="concern-tags">
+                    <button class="concern-tag" data-concern="acne-prone">Acne Prone Skin</button>
+<button class="concern-tag" data-concern="aging">Aging / Fine Lines</button>
+<button class="concern-tag" data-concern="comedogenic">Comedogenic</button>
+<button class="concern-tag" data-concern="contact-dermatitis">Contact Dermatitis</button>
+<button class="concern-tag" data-concern="dehydrated">Dehydrated Skin</button>
+<button class="concern-tag" data-concern="eczema">Eczema / Atopic Dermatitis</button>
+<button class="concern-tag" data-concern="fragrance-sensitivity">Fragrance Sensitivity</button>
+<button class="concern-tag" data-concern="fungal-prone">Fungal Prone Skin</button>
+<button class="concern-tag" data-concern="hyperpigmentation">Hyperpigmentation</button>
+<button class="concern-tag" data-concern="irritation">Irritation Potential</button>
+<button class="concern-tag" data-concern="oily-skin">Oily Skin</button>
+<button class="concern-tag" data-concern="photosensitivity">Photosensitivity</button>
+<button class="concern-tag" data-concern="pregnancy-safety">Pregnancy Safety</button>
+<button class="concern-tag" data-concern="psoriasis">Psoriasis</button>
+<button class="concern-tag" data-concern="rosacea">Rosacea</button>
+<button class="concern-tag" data-concern="seb-derm">Seborrhoeic Dermatitis</button>
+<button class="concern-tag" data-concern="sensitive-skin">Sensitive Skin</button>
+<button class="concern-tag" data-concern="xerosis">Very Dry Skin (Xerosis)</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <h2>Products <span id="product-count">(11)</span></h2>
+            <div class="products-grid">
+                <div class="product-card">
+            <div class="product-header">
+                <span class="brand">CeraVe</span>
+                <h3><a href="./products/cerave-hydrating-facial-cleanser.html">Hydrating Facial Cleanser</a></h3>
+            </div>
+            <div class="product-meta">
+                <span class="badge">cleanser</span>
+                <span class="price">$15.99 AUD</span>
+            </div>
+            <div class="ingredients-list">
+                <span class="ingredient" data-slug="aquawater">Aqua/Water</span>, <span class="ingredient" data-slug="glycerin">Glycerin</span>, <span class="ingredient" data-slug="cetearyl-alcohol">Cetearyl Alcohol</span>, <span class="ingredient" data-slug="peg-40-stearate">PEG-40 Stearate</span>, <span class="ingredient" data-slug="stearyl-alcohol">Stearyl Alcohol</span>, <span class="ingredient" data-slug="ceramide-np">Ceramide NP</span>, <span class="ingredient" data-slug="ceramide-ap">Ceramide AP</span>, <span class="ingredient" data-slug="ceramide-eop">Ceramide EOP</span>, <span class="ingredient" data-slug="carbomer">Carbomer</span>, <span class="ingredient" data-slug="sodium-lauroyl-lactylate">Sodium Lauroyl Lactylate</span>, <span class="ingredient" data-slug="sodium-hyaluronate">Sodium Hyaluronate</span>, <span class="ingredient" data-slug="cholesterol">Cholesterol</span>, <span class="ingredient" data-slug="phenoxyethanol">Phenoxyethanol</span>, <span class="ingredient" data-slug="phytosphingosine">Phytosphingosine</span>, <span class="ingredient" data-slug="xanthan-gum">Xanthan Gum</span>
+            </div>
+            <div class="product-status status-complete">complete</div>
+        </div><div class="product-card">
+            <div class="product-header">
+                <span class="brand">CeraVe</span>
+                <h3><a href="./products/cerave-sa-smoothing-cleanser-236ml.html">SA Smoothing Cleanser 236ml</a></h3>
+            </div>
+            <div class="product-meta">
+                <span class="badge">cleanser</span>
+                <span class="price">$21.99 AUD</span>
+            </div>
+            <div class="ingredients-list">
+                <span class="ingredient" data-slug="aquawater">Aqua/Water</span>, <span class="ingredient" data-slug="sodium-lauroyl-sarcosinate">Sodium Lauroyl Sarcosinate</span>, <span class="ingredient" data-slug="cocamidopropyl-hydroxysultaine">Cocamidopropyl Hydroxysultaine</span>, <span class="ingredient" data-slug="glycerin">Glycerin</span>, <span class="ingredient" data-slug="niacinamide">Niacinamide</span>, <span class="ingredient" data-slug="gluconolactone">Gluconolactone</span>, <span class="ingredient" data-slug="sodium-methyl-cocoyl-taurate">Sodium Methyl Cocoyl Taurate</span>, <span class="ingredient" data-slug="peg-150-pentaerythrityl-tetrastearate">PEG-150 Pentaerythrityl Tetrastearate</span>, <span class="ingredient" data-slug="ceramide-np">Ceramide NP</span>, <span class="ingredient" data-slug="ceramide-ap">Ceramide AP</span>, <span class="ingredient" data-slug="ceramide-eop">Ceramide EOP</span>, <span class="ingredient" data-slug="carbomer">Carbomer</span>, <span class="ingredient" data-slug="calcium-gluconate">Calcium Gluconate</span>, <span class="ingredient" data-slug="salicylic-acid">Salicylic Acid</span>, <span class="ingredient" data-slug="sodium-benzoate">Sodium Benzoate</span>, <span class="ingredient" data-slug="sodium-lauroyl-lactylate">Sodium Lauroyl Lactylate</span>, <span class="ingredient" data-slug="cholesterol">Cholesterol</span>, <span class="ingredient" data-slug="phenoxyethanol">Phenoxyethanol</span>, <span class="ingredient" data-slug="disodium-edta">Disodium EDTA</span>, <span class="ingredient" data-slug="tetrasodium-edta">Tetrasodium EDTA</span>, <span class="ingredient" data-slug="hydrolyzed-hyaluronic-acid">Hydrolyzed Hyaluronic Acid</span>, <span class="ingredient" data-slug="phytosphingosine">Phytosphingosine</span>, <span class="ingredient" data-slug="xanthan-gum">Xanthan Gum</span>, <span class="ingredient" data-slug="ethylhexylglycerin">Ethylhexylglycerin</span>
+            </div>
+            <div class="product-status status-complete">complete</div>
+        </div><div class="product-card">
+            <div class="product-header">
+                <span class="brand">CeraVe</span>
+                <h3><a href="./products/cerave-skin-renewing-vitamin-c-serum-30ml.html">Skin Renewing Vitamin C Serum 30ml</a></h3>
+            </div>
+            <div class="product-meta">
+                <span class="badge">serum</span>
+                <span class="price">$39.99 AUD</span>
+            </div>
+            <div class="ingredients-list">
+                <span class="ingredient" data-slug="aquawatereau">Aqua/Water/Eau</span>, <span class="ingredient" data-slug="ascorbic-acid">Ascorbic Acid</span>, <span class="ingredient" data-slug="glycerin">Glycerin</span>, <span class="ingredient" data-slug="dimethicone">Dimethicone</span>, <span class="ingredient" data-slug="cetearyl-ethylhexanoate">Cetearyl Ethylhexanoate</span>, <span class="ingredient" data-slug="alcohol-denat">Alcohol Denat.</span>, <span class="ingredient" data-slug="sodium-hydroxide">Sodium Hydroxide</span>, <span class="ingredient" data-slug="ammonium-polyacryloyldimethyl-taurate">Ammonium Polyacryloyldimethyl Taurate</span>, <span class="ingredient" data-slug="panthenol">Panthenol</span>, <span class="ingredient" data-slug="ceramide-np">Ceramide NP</span>, <span class="ingredient" data-slug="ceramide-ap">Ceramide AP</span>, <span class="ingredient" data-slug="ceramide-eop">Ceramide EOP</span>, <span class="ingredient" data-slug="carbomer">Carbomer</span>, <span class="ingredient" data-slug="cetearyl-alcohol">Cetearyl Alcohol</span>, <span class="ingredient" data-slug="behentrimonium-methosulfate">Behentrimonium Methosulfate</span>, <span class="ingredient" data-slug="sodium-hyaluronate">Sodium Hyaluronate</span>, <span class="ingredient" data-slug="sodium-lauroyl-lactylate">Sodium Lauroyl Lactylate</span>, <span class="ingredient" data-slug="cholesterol">Cholesterol</span>, <span class="ingredient" data-slug="phenoxyethanol">Phenoxyethanol</span>, <span class="ingredient" data-slug="tocopheryl-acetate">Tocopheryl Acetate</span>, <span class="ingredient" data-slug="disodium-edta">Disodium EDTA</span>, <span class="ingredient" data-slug="isopropyl-myristate">Isopropyl Myristate</span>, <span class="ingredient" data-slug="caprylyl-glycol">Caprylyl Glycol</span>, <span class="ingredient" data-slug="xanthan-gum">Xanthan Gum</span>, <span class="ingredient" data-slug="phytosphingosine">Phytosphingosine</span>, <span class="ingredient" data-slug="ethylhexylglycerin">Ethylhexylglycerin</span>
+            </div>
+            <div class="product-status status-complete">complete</div>
+        </div><div class="product-card">
+            <div class="product-header">
+                <span class="brand">Cetaphil</span>
+                <h3><a href="./products/cetaphil-daily-facial-cleanser-236ml.html">Daily Facial Cleanser 236ml</a></h3>
+            </div>
+            <div class="product-meta">
+                <span class="badge">cleanser</span>
+                <span class="price">$14.99 AUD</span>
+            </div>
+            <div class="ingredients-list">
+                <span class="ingredient" data-slug="aqua">Aqua</span>, <span class="ingredient" data-slug="glycerin">Glycerin</span>, <span class="ingredient" data-slug="acrylatesc10-30-alkyl-acrylate-crosspolymer">Acrylates/C10-30 Alkyl Acrylate Crosspolymer</span>, <span class="ingredient" data-slug="sodium-benzoate">Sodium Benzoate</span>, <span class="ingredient" data-slug="disodium-laureth-sulfosuccinate">Disodium Laureth Sulfosuccinate</span>, <span class="ingredient" data-slug="cocamidopropyl-betaine">Cocamidopropyl Betaine</span>, <span class="ingredient" data-slug="sodium-chloride">Sodium Chloride</span>, <span class="ingredient" data-slug="sodium-cocoamphoacetate">Sodium Cocoamphoacetate</span>, <span class="ingredient" data-slug="panthenol">Panthenol</span>, <span class="ingredient" data-slug="pantolactone">Pantolactone</span>, <span class="ingredient" data-slug="niacinamide">Niacinamide</span>, <span class="ingredient" data-slug="citric-acid">Citric Acid</span>
+            </div>
+            <div class="product-status status-complete">complete</div>
+        </div><div class="product-card">
+            <div class="product-header">
+                <span class="brand">La Roche-Posay</span>
+                <h3><a href="./products/la-roche-posay-effaclar-purifying-foaming-gel-anti-acne-cleanser-200ml.html">Effaclar Purifying Foaming Gel Anti-Acne Cleanser 200ml</a></h3>
+            </div>
+            <div class="product-meta">
+                <span class="badge">cleanser</span>
+                <span class="price">$31.39 AUD</span>
+            </div>
+            <div class="ingredients-list">
+                <span class="ingredient" data-slug="aquawatereau">Aqua/Water/Eau</span>, <span class="ingredient" data-slug="sodium-laureth-sulfate">Sodium Laureth Sulfate</span>, <span class="ingredient" data-slug="peg-8">PEG-8</span>, <span class="ingredient" data-slug="coco-betaine">Coco-Betaine</span>, <span class="ingredient" data-slug="hexylene-glycol">Hexylene Glycol</span>, <span class="ingredient" data-slug="sodium-chloride">Sodium Chloride</span>, <span class="ingredient" data-slug="punica-granatum-pericarp-extract">Punica Granatum Pericarp Extract</span>, <span class="ingredient" data-slug="zinc-pca">Zinc PCA</span>, <span class="ingredient" data-slug="peg-120-methyl-glucose-dioleate">PEG-120 Methyl Glucose Dioleate</span>, <span class="ingredient" data-slug="sodium-citrate">Sodium Citrate</span>, <span class="ingredient" data-slug="sodium-hydroxide">Sodium Hydroxide</span>, <span class="ingredient" data-slug="caprylyl-glycol">Caprylyl Glycol</span>, <span class="ingredient" data-slug="citric-acid">Citric Acid</span>, <span class="ingredient" data-slug="trisodium-ethylenediamine-disuccinate">Trisodium Ethylenediamine Disuccinate</span>, <span class="ingredient" data-slug="maltodextrin">Maltodextrin</span>, <span class="ingredient" data-slug="pentylene-glycol">Pentylene Glycol</span>, <span class="ingredient" data-slug="tocopherol">Tocopherol</span>, <span class="ingredient" data-slug="sodium-benzoate">Sodium Benzoate</span>, <span class="ingredient" data-slug="phenoxyethanol">Phenoxyethanol</span>, <span class="ingredient" data-slug="parfumfragrance">Parfum/Fragrance</span>
+            </div>
+            <div class="product-status status-complete">complete</div>
+        </div><div class="product-card">
+            <div class="product-header">
+                <span class="brand">La Roche-Posay</span>
+                <h3><a href="./products/la-roche-posay-toleriane-caring-wash-cleanser-200ml.html">Toleriane Caring Wash Cleanser 200ml</a></h3>
+            </div>
+            <div class="product-meta">
+                <span class="badge">cleanser</span>
+                <span class="price">$31.99 AUD</span>
+            </div>
+            <div class="ingredients-list">
+                <span class="ingredient" data-slug="aquawatereau">Aqua/Water/Eau</span>, <span class="ingredient" data-slug="glycerin">Glycerin</span>, <span class="ingredient" data-slug="pentaerythrityl-tetraethylhexanoate">Pentaerythrityl Tetraethylhexanoate</span>, <span class="ingredient" data-slug="propanediol">Propanediol</span>, <span class="ingredient" data-slug="ammonium-polyacryloyldimethyl-taurate">Ammonium Polyacryloyldimethyl Taurate</span>, <span class="ingredient" data-slug="polysorbate-60">Polysorbate 60</span>, <span class="ingredient" data-slug="ceramide-np">Ceramide NP</span>, <span class="ingredient" data-slug="niacinamide">Niacinamide</span>, <span class="ingredient" data-slug="sodium-chloride">Sodium Chloride</span>, <span class="ingredient" data-slug="coco-betaine">Coco-Betaine</span>, <span class="ingredient" data-slug="disodium-edta">Disodium EDTA</span>, <span class="ingredient" data-slug="caprylyl-glycol">Caprylyl Glycol</span>, <span class="ingredient" data-slug="citric-acid">Citric Acid</span>, <span class="ingredient" data-slug="trisodium-ethylenediamine-disuccinate">Trisodium Ethylenediamine Disuccinate</span>, <span class="ingredient" data-slug="panthenol">Panthenol</span>, <span class="ingredient" data-slug="pentylene-glycol">Pentylene Glycol</span>, <span class="ingredient" data-slug="ethylhexylglycerin">Ethylhexylglycerin</span>, <span class="ingredient" data-slug="tocopherol">Tocopherol</span>, <span class="ingredient" data-slug="chlorphenesin">Chlorphenesin</span>
+            </div>
+            <div class="product-status status-complete">complete</div>
+        </div><div class="product-card">
+            <div class="product-header">
+                <span class="brand">La Roche-Posay</span>
+                <h3><a href="./products/la-roche-posay-toleriane-sensitive-facial-moisturiser-40ml.html">Toleriane Sensitive Facial Moisturiser 40ml</a></h3>
+            </div>
+            <div class="product-meta">
+                <span class="badge">moisturizer</span>
+                <span class="price">$35.99 AUD</span>
+            </div>
+            <div class="ingredients-list">
+                <span class="ingredient" data-slug="aqua">Aqua</span>, <span class="ingredient" data-slug="glycerin">Glycerin</span>, <span class="ingredient" data-slug="squalane">Squalane</span>, <span class="ingredient" data-slug="dimethicone">Dimethicone</span>, <span class="ingredient" data-slug="zea-mays-starch">Zea Mays Starch</span>, <span class="ingredient" data-slug="niacinamide">Niacinamide</span>, <span class="ingredient" data-slug="ammonium-polyacryloyldimethyl-taurate">Ammonium Polyacryloyldimethyl Taurate</span>, <span class="ingredient" data-slug="myristyl-myristate">Myristyl Myristate</span>, <span class="ingredient" data-slug="sodium-hydroxide">Sodium Hydroxide</span>, <span class="ingredient" data-slug="stearic-acid">Stearic Acid</span>, <span class="ingredient" data-slug="palmitic-acid">Palmitic Acid</span>, <span class="ingredient" data-slug="xanthan-gum">Xanthan Gum</span>, <span class="ingredient" data-slug="capryloyl-glycine">Capryloyl Glycine</span>, <span class="ingredient" data-slug="caprylyl-glycol">Caprylyl Glycol</span>, <span class="ingredient" data-slug="ceramide-np">Ceramide NP</span>, <span class="ingredient" data-slug="myristic-acid">Myristic Acid</span>, <span class="ingredient" data-slug="potassium-cetyl-phosphate">Potassium Cetyl Phosphate</span>, <span class="ingredient" data-slug="glyceryl-stearate-se">Glyceryl Stearate SE</span>
+            </div>
+            <div class="product-status status-complete">complete</div>
+        </div><div class="product-card">
+            <div class="product-header">
+                <span class="brand">NIVEA</span>
+                <h3><a href="./products/nivea-daily-essentials-refreshing-face-wash-cleanser-150ml.html">Daily Essentials Refreshing Face Wash Cleanser 150ml</a></h3>
+            </div>
+            <div class="product-meta">
+                <span class="badge">cleanser</span>
+                <span class="price">$10.99 AUD</span>
+            </div>
+            <div class="ingredients-list">
+                <span class="ingredient" data-slug="aqua">Aqua</span>, <span class="ingredient" data-slug="cocamidopropyl-betaine">Cocamidopropyl Betaine</span>, <span class="ingredient" data-slug="sodium-myreth-sulfate">Sodium Myreth Sulfate</span>, <span class="ingredient" data-slug="acrylates-copolymer">Acrylates Copolymer</span>, <span class="ingredient" data-slug="glycerin">Glycerin</span>, <span class="ingredient" data-slug="nelumbo-nucifera-flower-extract">Nelumbo Nucifera Flower Extract</span>, <span class="ingredient" data-slug="tocopherol">Tocopherol</span>, <span class="ingredient" data-slug="tocopheryl-acetate">Tocopheryl Acetate</span>, <span class="ingredient" data-slug="lauryl-glucoside">Lauryl Glucoside</span>, <span class="ingredient" data-slug="sodium-lauryl-sulfate">Sodium Lauryl Sulfate</span>, <span class="ingredient" data-slug="peg-40-hydrogenated-castor-oil">PEG-40 Hydrogenated Castor Oil</span>, <span class="ingredient" data-slug="peg-200-hydrogenated-glyceryl-palmate">PEG-200 Hydrogenated Glyceryl Palmate</span>, <span class="ingredient" data-slug="benzophenone-4">Benzophenone-4</span>, <span class="ingredient" data-slug="sodium-chloride">Sodium Chloride</span>, <span class="ingredient" data-slug="polyquaternium-10">Polyquaternium-10</span>, <span class="ingredient" data-slug="sodium-hydroxide">Sodium Hydroxide</span>, <span class="ingredient" data-slug="phenoxyethanol">Phenoxyethanol</span>, <span class="ingredient" data-slug="methylparaben">Methylparaben</span>, <span class="ingredient" data-slug="ethylparaben">Ethylparaben</span>, <span class="ingredient" data-slug="sodium-sulfate">Sodium Sulfate</span>, <span class="ingredient" data-slug="geraniol">Geraniol</span>, <span class="ingredient" data-slug="benzyl-alcohol">Benzyl Alcohol</span>, <span class="ingredient" data-slug="linalool">Linalool</span>, <span class="ingredient" data-slug="triethanolamine">Triethanolamine</span>, <span class="ingredient" data-slug="parfum">Parfum</span>, <span class="ingredient" data-slug="ci-42090">CI 42090</span>, <span class="ingredient" data-slug="ci-16035">CI 16035</span>
+            </div>
+            <div class="product-status status-complete">complete</div>
+        </div><div class="product-card">
+            <div class="product-header">
+                <span class="brand">Simple</span>
+                <h3><a href="./products/simple-kind-to-skin-facial-wash-moisturising-150ml.html">Kind To Skin Facial Wash Moisturising 150ml</a></h3>
+            </div>
+            <div class="product-meta">
+                <span class="badge">cleanser</span>
+                <span class="price">$9.99 AUD</span>
+            </div>
+            <div class="ingredients-list">
+                <span class="ingredient" data-slug="aqua">Aqua</span>, <span class="ingredient" data-slug="sodium-laureth-sulfate">Sodium Laureth Sulfate</span>, <span class="ingredient" data-slug="decyl-glucoside">Decyl Glucoside</span>, <span class="ingredient" data-slug="cocamidopropyl-betaine">Cocamidopropyl Betaine</span>, <span class="ingredient" data-slug="glycerin">Glycerin</span>, <span class="ingredient" data-slug="peg-55-propylene-glycol-oleate">PEG-55 Propylene Glycol Oleate</span>, <span class="ingredient" data-slug="propylene-glycol">Propylene Glycol</span>, <span class="ingredient" data-slug="sodium-chloride">Sodium Chloride</span>, <span class="ingredient" data-slug="panthenol">Panthenol</span>, <span class="ingredient" data-slug="peg-7-glyceryl-cocoate">PEG-7 Glyceryl Cocoate</span>, <span class="ingredient" data-slug="phenoxyethanol">Phenoxyethanol</span>, <span class="ingredient" data-slug="glycol-distearate">Glycol Distearate</span>, <span class="ingredient" data-slug="tocopheryl-acetate">Tocopheryl Acetate</span>, <span class="ingredient" data-slug="polyquaternium-39">Polyquaternium-39</span>, <span class="ingredient" data-slug="cocamide-mea">Cocamide MEA</span>, <span class="ingredient" data-slug="laureth-10">Laureth-10</span>, <span class="ingredient" data-slug="disodium-edta">Disodium EDTA</span>, <span class="ingredient" data-slug="sodium-benzoate">Sodium Benzoate</span>, <span class="ingredient" data-slug="hydroxypropyl-cyclodextrin">Hydroxypropyl Cyclodextrin</span>, <span class="ingredient" data-slug="pantolactone">Pantolactone</span>, <span class="ingredient" data-slug="benzoic-acid">Benzoic Acid</span>, <span class="ingredient" data-slug="bisabolol">Bisabolol</span>, <span class="ingredient" data-slug="iodopropynyl-butylcarbamate">Iodopropynyl Butylcarbamate</span>, <span class="ingredient" data-slug="citric-acid">Citric Acid</span>
+            </div>
+            <div class="product-status status-complete">complete</div>
+        </div><div class="product-card">
+            <div class="product-header">
+                <span class="brand">Skin Republic</span>
+                <h3><a href="./products/skin-republic-hyaluronic-acid-1-niacinamide-2-serum-30ml.html">Hyaluronic Acid 1% + Niacinamide 2% Serum 30ml</a></h3>
+            </div>
+            <div class="product-meta">
+                <span class="badge">serum</span>
+                <span class="price">$19.99 AUD</span>
+            </div>
+            <div class="ingredients-list">
+                <span class="ingredient" data-slug="aquawatereau">Aqua/Water/Eau</span>, <span class="ingredient" data-slug="glycerin">Glycerin</span>, <span class="ingredient" data-slug="niacinamide">Niacinamide</span>, <span class="ingredient" data-slug="panthenol">Panthenol</span>, <span class="ingredient" data-slug="sodium-hyaluronate">Sodium Hyaluronate</span>, <span class="ingredient" data-slug="carbomer">Carbomer</span>, <span class="ingredient" data-slug="ethylhexylglycerin">Ethylhexylglycerin</span>, <span class="ingredient" data-slug="tocopherol">Tocopherol</span>, <span class="ingredient" data-slug="triethanolamine">Triethanolamine</span>, <span class="ingredient" data-slug="phenoxyethanol">Phenoxyethanol</span>
+            </div>
+            <div class="product-status status-complete">complete</div>
+        </div><div class="product-card">
+            <div class="product-header">
+                <span class="brand">Sukin</span>
+                <h3><a href="./products/sukin-signature-foaming-facial-cleanser-50ml.html">Signature Foaming Facial Cleanser 50ml</a></h3>
+            </div>
+            <div class="product-meta">
+                <span class="badge">cleanser</span>
+                <span class="price">$4.99 AUD</span>
+            </div>
+            <div class="ingredients-list">
+                <span class="ingredient" data-slug="water-aqua">Water (Aqua)</span>, <span class="ingredient" data-slug="aloe-barbadensis-leaf-juice">Aloe Barbadensis Leaf Juice</span>, <span class="ingredient" data-slug="cocamidopropyl-betaine">Cocamidopropyl Betaine</span>, <span class="ingredient" data-slug="decyl-glucoside">Decyl Glucoside</span>, <span class="ingredient" data-slug="peg-150-pentaerythrityl-tetrastearate">PEG-150 Pentaerythrityl Tetrastearate</span>, <span class="ingredient" data-slug="chamomilla-recutita-matricaria-flower-extract">Chamomilla Recutita (Matricaria) Flower Extract</span>, <span class="ingredient" data-slug="camellia-sinensis-leaf-extract">Camellia Sinensis Leaf Extract</span>, <span class="ingredient" data-slug="hamamelis-virginiana-witch-hazel-extract">Hamamelis Virginiana (Witch Hazel) Extract</span>, <span class="ingredient" data-slug="glycerin">Glycerin</span>, <span class="ingredient" data-slug="macadamia-ternifolia-seed-oil">Macadamia Ternifolia Seed Oil</span>, <span class="ingredient" data-slug="rosa-canina-fruit-oil">Rosa Canina Fruit Oil</span>, <span class="ingredient" data-slug="oenothera-biennis-evening-primrose-oil">Oenothera Biennis (Evening Primrose) Oil</span>, <span class="ingredient" data-slug="citrus-tangerina-tangerine-peel-oil">Citrus Tangerina (Tangerine) Peel Oil</span>, <span class="ingredient" data-slug="citrus-nobilis-mandarin-orange-peel-oil">Citrus Nobilis (Mandarin Orange) Peel Oil</span>, <span class="ingredient" data-slug="lavandula-angustifolia-lavender-oil">Lavandula Angustifolia (Lavender) Oil</span>, <span class="ingredient" data-slug="vanillin">Vanillin</span>, <span class="ingredient" data-slug="vanilla-planifolia-fruit-extract">Vanilla Planifolia Fruit Extract</span>, <span class="ingredient" data-slug="phenoxyethanol">Phenoxyethanol</span>, <span class="ingredient" data-slug="benzyl-alcohol">Benzyl Alcohol</span>, <span class="ingredient" data-slug="limonene">Limonene</span>, <span class="ingredient" data-slug="linalool">Linalool</span>
+            </div>
+            <div class="product-status status-complete">complete</div>
+        </div>
+            </div>
+        </section>
+    
+    </main>
+    <footer>
+        <p>Skincare Database - Helping you find products for your skin concerns</p>
+    </footer>
+    <script src="./js/filters.js"></script>
+</body>
+</html>
