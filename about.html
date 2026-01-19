@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Seb-Derm Safe Skincare</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script>
+        (function() {
+            const saved = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', saved);
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="./index.html">Seb-Derm Safe</a></div>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="">Products</a></li>
+                <li><a href="./ingredients.html" class="">Ingredients</a></li>
+                <li><a href="./about.html" class="active">About</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+                <span class="icon-sun">&#9728;</span>
+                <span class="icon-moon">&#9790;</span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        
+        <article class="about-page">
+            <h1>About This Database</h1>
+
+            <section>
+                <h2>What is Seborrhoeic Dermatitis?</h2>
+                <p>Seborrhoeic dermatitis is a common skin condition causing scaly patches, red skin, and stubborn
+                dandruff. It's often triggered by an overgrowth of <strong>Malassezia yeast</strong>, which naturally
+                lives on our skin but can cause problems when it grows too much.</p>
+            </section>
+
+            <section>
+                <h2>Why This Database?</h2>
+                <p>Many skincare ingredients can <strong>feed Malassezia yeast</strong>, making seb-derm worse.
+                This database helps you identify potentially problematic ingredients so you can make informed choices.</p>
+            </section>
+
+            <section>
+                <h2>Assessment Methodology</h2>
+                <p>Each ingredient is assessed based on:</p>
+                <ul>
+                    <li><strong>Chemical structure</strong> - Esters, fatty acids (C11-C24), and certain oils are known Malassezia food sources</li>
+                    <li><strong>Published research</strong> - We prioritize peer-reviewed studies from PubMed</li>
+                    <li><strong>Expert sources</strong> - Dermatology organizations and recognized experts</li>
+                </ul>
+
+                <h3>Source Credibility Weighting</h3>
+                <table class="credibility-table">
+                    <thead>
+                        <tr><th>Source Type</th><th>Weight</th><th>Examples</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Journal</td><td>1.0</td><td>PubMed, peer-reviewed studies</td></tr>
+                        <tr><td>Dermatology Org</td><td>0.85</td><td>AAD, DermNet NZ</td></tr>
+                        <tr><td>Expert Blog</td><td>0.6</td><td>Simple Skincare Science</td></tr>
+                        <tr><td>Database</td><td>0.5</td><td>INCIDecoder, CosDNA</td></tr>
+                        <tr><td>Community</td><td>0.3</td><td>Reddit, forums</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>Understanding the Indicators</h2>
+                <div class="indicator-guide">
+                    <div class="indicator-item">
+                        <span class="dot dot-red"></span>
+                        <strong>Red</strong> - Confirmed to feed Malassezia
+                    </div>
+                    <div class="indicator-item">
+                        <span class="dot dot-orange"></span>
+                        <strong>Orange</strong> - Contains ester bonds (often problematic)
+                    </div>
+                    <div class="indicator-item">
+                        <span class="dot dot-yellow"></span>
+                        <strong>Yellow</strong> - Fatty acid or alcohol (check carbon chain)
+                    </div>
+                    <div class="indicator-item">
+                        <span class="dot dot-purple"></span>
+                        <strong>Purple</strong> - Polysorbate (breaks down to fatty acids)
+                    </div>
+                    <div class="indicator-item">
+                        <span class="dot dot-teal"></span>
+                        <strong>Teal</strong> - Toxic to Malassezia (beneficial)
+                    </div>
+                    <div class="indicator-item">
+                        <span class="dot dot-green"></span>
+                        <strong>Green</strong> - Has antifungal properties
+                    </div>
+                    <div class="indicator-item">
+                        <span class="dot dot-blue"></span>
+                        <strong>Blue</strong> - Generally considered safe
+                    </div>
+                    <div class="indicator-item">
+                        <span class="dot dot-gray"></span>
+                        <strong>Gray</strong> - Not yet researched
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Important Disclaimer</h2>
+                <p><strong>This database provides information, not medical advice.</strong> Individual reactions vary,
+                and what's problematic for one person may be fine for another. Always:</p>
+                <ul>
+                    <li>Consult a dermatologist for personalized advice</li>
+                    <li>Patch test new products</li>
+                    <li>Consider your individual triggers and sensitivities</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Database Statistics</h2>
+                <ul>
+                    <li>Products: 58</li>
+                    <li>Ingredients: 368</li>
+                    <li>Ingredients assessed: 368</li>
+                    <li>Research sources: 93</li>
+                </ul>
+            </section>
+        </article>
+    
+    </main>
+    <footer>
+        <p>Seb-Derm Safe Skincare Database - Helping you find Malassezia-safe products</p>
+    </footer>
+    <script src="./js/filters.js"></script>
+</body>
+</html>
